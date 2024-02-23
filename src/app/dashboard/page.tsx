@@ -1,9 +1,14 @@
+import { authOptions } from "@/lib/auth";
+import { getServerSession } from "next-auth";
 import { FC } from "react";
 
-interface pageProps {}
+const page = async ({}) => {
+  const session = await getServerSession(authOptions);
+  console.log(session);
 
-const page: FC<pageProps> = ({}) => {
-  return <div>page</div>;
+  return <div></div>;
 };
 
 export default page;
+
+// 1.30
