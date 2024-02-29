@@ -4,9 +4,9 @@ import { FC } from "react";
 
 const page = async ({}) => {
   const session = await getServerSession(authOptions);
-  console.log(session);
+  // console.log(session);
 
-  return <div></div>;
+  return <div>Dashboard</div>;
 };
 
 export default page;
